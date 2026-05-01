@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="dynomo_AI.css">
+</head>
+<body>
+
+<!-- GRID BG -->
+<div style="position:fixed;inset:0;pointer-events:none;z-index:0">
+  <div class="grid-bg"></div>
+</div>
+
+<div style="position:relative;z-index:1">
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Dyno<span>mo</span>AI</div>
+  <div class="nav-links">
+    <a href="#">Services</a>
+    <a href="#">Demo</a>
+    <a href="#">Internships</a>
+    <a href="#">Blog</a>
+    <a href="#">About</a>
+  </div>
+  <button class="nav-cta">Join Beta →</button>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div class="badge"><span class="badge-dot"></span>RAG-as-a-Service · Now in Beta</div>
+  <h1>Intelligence built<br>on <span class="grad">your data.</span></h1>
+  <p>Agentic AI that retrieves, reasons, and acts — powered by your private knowledge base. No hallucinations. Full compliance.</p>
+  <div class="hero-btns">
+    <button class="btn-primary">Try DynomoAI Free</button>
+    <button class="btn-ghost">Watch the Demo ▶</button>
+  </div>
+  <div class="stats-row">
+    <div class="stat"><div class="num">10x<span>+</span></div><div class="lbl">retrieval speed</div></div>
+    <div class="stat"><div class="num">99<span>%</span></div><div class="lbl">accuracy on RAG</div></div>
+    <div class="stat"><div class="num">SOC2</div><div class="lbl">compliant infra</div></div>
+    <div class="stat"><div class="num">DPDP</div><div class="lbl">India Act ready</div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section>
+  <div class="sec-label">// what we build</div>
+  <div class="sec-title">Service Catalog</div>
+  <div class="sec-sub">Three pillars of enterprise AI — from plug-and-play RAG to fully custom agentic systems.</div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="svc-icon blue">⚡</div>
+      <h3>Agentic AI Solutions</h3>
+      <p>Custom AI agents that retrieve, reason, and take action autonomously — integrated with your existing systems and APIs.</p>
+      <span class="tag">Custom dev</span>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon purple">🔍</div>
+      <h3>RAG-as-a-Service</h3>
+      <p>Bring your own data. We deploy a private retrieval-augmented pipeline that keeps your knowledge secure and current.</p>
+      <span class="tag">Self-hosted + API</span>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon green">🏗️</div>
+      <h3>SaaS Consulting</h3>
+      <p>Architecture reviews and implementation support for companies building multi-tenant AI products at scale.</p>
+      <span class="tag">Enterprise</span>
+    </div>
+  </div>
+</section>
+
+<!-- AI SANDBOX DEMO -->
+<section>
+  <div class="sec-label">// live demo</div>
+  <div class="sec-title">Try DynomoAI</div>
+  <div class="sec-sub">See how our RAG pipeline processes your prompt — watch retrieval chunks surface in real time.</div>
+  <div class="demo-box">
+    <div class="demo-header">
+      <div class="demo-dot" style="background:#ff5f56"></div>
+      <div class="demo-dot" style="background:#ffbd2e"></div>
+      <div class="demo-dot" style="background:#27c93f"></div>
+      <span class="demo-title">dynomoai-rag-playground v0.4.1</span>
+    </div>
+    <div class="demo-body">
+      <div class="demo-input-side">
+        <label>// your prompt</label>
+        <textarea class="demo-textarea" id="demoInput" placeholder="e.g. Summarise our Q3 sales data and flag anomalies...">What are the key trends in our customer churn data?</textarea>
+        <button class="demo-run" onclick="runDemo()">▶  Run RAG Pipeline</button>
+      </div>
+      <div class="demo-output">
+        <div class="demo-output-label">// retrieved chunks + response</div>
+        <div class="typing" id="demoOutput">
+          <div style="color:rgba(255,255,255,0.3);font-family:'IBM Plex Mono',monospace;font-size:12px">Click "Run RAG Pipeline" to see retrieval in action<span class="cursor">_</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section>
+  <div class="sec-label">// careers</div>
+  <div class="sec-title">Internship Portal</div>
+  <div class="sec-sub">Remote-first program. Work on real RAG systems and neural network research from day one.</div>
+  <div class="intern-grid">
+    <div class="intern-card">
+      <h3>AI/ML Engineering Intern</h3>
+      <div class="role-type">Remote · 3 months · Stipend</div>
+      <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Build retrieval pipelines, fine-tune embedding models, and contribute to our neural network research papers.</p>
+      <div class="tech-stack">
+        <span class="tech">Python</span><span class="tech">PyTorch</span><span class="tech">FastAPI</span><span class="tech">pgvector</span>
+      </div>
+      <button class="apply-btn">Apply + Upload Resume →</button>
+    </div>
+    <div class="intern-card">
+      <h3>Full-Stack Dev Intern</h3>
+      <div class="role-type">Remote · 3 months · Stipend</div>
+      <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Build the frontend experience and API integrations for DynomoAI's SaaS platform. Ship features users love.</p>
+      <div class="tech-stack">
+        <span class="tech">React</span><span class="tech">Next.js</span><span class="tech">Java</span><span class="tech">MySQL</span>
+      </div>
+      <button class="apply-btn">Apply + Upload Resume →</button>
+    </div>
+  </div>
+</section>
+
+<!-- WAITLIST / BETA -->
+<section>
+  <div class="waitlist-box">
+    <div class="sec-label" style="margin-bottom:16px">// early access</div>
+    <h2>Join the Beta</h2>
+    <p>Get early access to DynomoAI's RAG platform. Limited seats — engineering teams and founders first.</p>
+    <div class="email-row">
+      <input class="email-input" type="email" placeholder="you@company.com" id="emailInput">
+      <button class="join-btn" onclick="joinBeta()">Join Waitlist</button>
+    </div>
+    <div class="compliance-note">🔒 DPDP Act compliant · Data never used for training · Delete anytime</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div style="margin-bottom:8px"><span>DynomoAI</span> by Dynomosoft · Mangalore, Karanataka-India</div>
+  <div>Built on Next.js + FastAPI · MySQL + Supabase · Deployed on Vercel / AWS</div>
+</footer>
+
+</div>
+
+<script src="dynomo_AI.js"></script>
+</body>
+</html>
